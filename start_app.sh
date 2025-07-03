@@ -1,0 +1,17 @@
+#!/bin/bash
+echo "🚀 Starting Zurich Edge AI Insurance Platform..."
+echo "Multi-Agentic AI System with ReAct & Hierarchical Frameworks"
+echo ""
+echo "📊 Application will be available at:"
+echo "   Local:    http://localhost:8501"
+echo "   Network:  http://$(hostname -I | awk '{print $1}'):8501"
+echo ""
+echo "💡 Features:"
+echo "   • Multi-Agentic AI with 7 specialized agents"
+echo "   • ReAct framework for intelligent reasoning"
+echo "   • Hierarchical coordination for complex tasks"
+echo "   • Credit optimization for cost efficiency"
+echo "   • Real-time monitoring and analytics"
+echo ""
+echo "🔧 Starting application..."
+streamlit run app.py --server.port 8501

@@ -1,0 +1,207 @@
+🛡️ Zurich Edge AI Insurance Platform Demo
+==================================================
+Multi-Agentic AI with ReAct & Hierarchical Frameworks
+==================================================
+🚀 Starting Zurich Edge AI Platform Demo...
+This demo showcases the multi-agentic system with ReAct and Hierarchical frameworks
+Focus: Credit optimization and clear workflow visualization
+
+
+🔧 WORKFLOW OPTIMIZATION DEMO
+------------------------------
+
+📋 Demo 1: What is my policy status?...
+💳 Budget: 10 credits
+🔍 Generated 1 steps, optimized to 1 steps
+💰 Total cost: 2 credits
+⚡ Efficiency: 80.0%
+📝 Workflow Steps:
+   1. Policy Advisor (2 credits)
+      Action: Recommend optimal policy configuration
+      Reasoning: Initial assessment required by policy_advisor to understand task scope and requi...
+
+📋 Demo 2: I need to file a claim for car damage from yesterd...
+💳 Budget: 20 credits
+🔍 Generated 1 steps, optimized to 1 steps
+💰 Total cost: 5 credits
+⚡ Efficiency: 75.0%
+📝 Workflow Steps:
+   1. Claims Specialist (5 credits)
+      Action: Process claim and assess damage
+      Reasoning: Initial assessment required by claims_specialist to understand task scope and re...
+
+📋 Demo 3: Emergency claim: house fire, need immediate assist...
+💳 Budget: 50 credits
+🔍 Generated 2 steps, optimized to 2 steps
+💰 Total cost: 10 credits
+⚡ Efficiency: 80.0%
+📝 Workflow Steps:
+   1. Coordinator (3 credits)
+      Action: Analyze task and coordinate workflow
+      Reasoning: Initial assessment required by coordinator to understand task scope and requirem...
+   2. Claims Specialist (7 credits)
+      Action: Process claim and assess damage
+      Reasoning: Specialized processing by claims_specialist based on previous analysis results...
+
+📋 Demo 4: Investigate suspicious claim patterns for policy #...
+💳 Budget: 35 credits
+🔍 Generated 2 steps, optimized to 2 steps
+💰 Total cost: 9 credits
+⚡ Efficiency: 74.3%
+📝 Workflow Steps:
+   1. Claims Specialist (5 credits)
+      Action: Process claim and assess damage
+      Reasoning: Initial assessment required by claims_specialist to understand task scope and re...
+   2. Policy Advisor (4 credits)
+      Action: Recommend optimal policy configuration
+      Reasoning: Specialized processing by policy_advisor based on previous analysis results...
+
+🧠 REACT FRAMEWORK DEMO
+-------------------------
+📋 Task: Analyze flood risk for property in Miami and process related insurance claim
+🔧 Context: {
+  "customer_id": "CUST_DEMO",
+  "property_location": "Miami, FL",
+  "policy_number": "POL_DEMO_001",
+  "urgency": "High"
+}
+
+🤖 Agent: Master Coordinator
+--------------------
+🧠 Reasoning: 
+        Task Analysis:
+        - Complexity Level: MEDIUM
+        - Primary Domain: claims_processi...
+⚡ Action: workflow_coordination
+💳 Credits Used: 3
+🎯 Confidence: 0.90
+⏱️ Execution Time: 0.00s
+📊 Key Results:
+   action: workflow_coordination...
+   execution_plan: dict with 7 items
+   optimization_score: 0.9033140033536672...
+
+🤖 Agent: Claims Processing Specialist
+--------------------
+🧠 Reasoning: 
+        Claim Analysis:
+        - Claim Type: PROPERTY
+        - Assessment Method: structural_dama...
+⚡ Action: claim_processing_completed
+💳 Credits Used: 3
+🎯 Confidence: 0.92
+⏱️ Execution Time: 0.00s
+📊 Key Results:
+   action: claim_processing_completed...
+   claim_id: CLM_20250701_6907...
+   damage_assessment: dict with 6 items
+
+🤖 Agent: Risk Analysis Specialist
+--------------------
+🧠 Reasoning: 
+        Risk Assessment Analysis:
+        - Risk Type: FLOOD
+        - Data Sources: weather_patter...
+⚡ Action: comprehensive_risk_analysis_completed
+💳 Credits Used: 3
+🎯 Confidence: 0.91
+⏱️ Execution Time: 0.00s
+📊 Key Results:
+   action: comprehensive_risk_analysis_completed...
+   risk_assessment: dict with 6 items
+   predictions: dict with 5 items
+
+🏗️ HIERARCHICAL COORDINATION DEMO
+-----------------------------------
+📊 Agent Hierarchy:
+   Level 1:
+      • Master Coordinator (Cost: 2, Max Tasks: 10)
+   Level 2:
+      • Claims Processing Agent (Cost: 5, Max Tasks: 3)
+      • Risk Analysis Agent (Cost: 4, Max Tasks: 2)
+      • Fraud Detection Agent (Cost: 6, Max Tasks: 2)
+   Level 3:
+      • Policy Advisory Agent (Cost: 4, Max Tasks: 3)
+      • Dynamic Pricing Agent (Cost: 3, Max Tasks: 4)
+   Level 4:
+      • Customer Service Agent (Cost: 3, Max Tasks: 5)
+
+🎯 Coordination Scenario:
+Complex claim requiring multiple agents...
+📋 Task: Process emergency auto claim with potential fraud indicators and high damage value
+
+📋 Coordinator's Execution Plan:
+   Workflow ID: WF_20250701_102942
+   Agent Sequence: claims_specialist, fraud_detector, customer_service
+   Estimated Duration: 45 seconds
+   Estimated Credits: 21
+
+⚡ Parallel Execution Groups:
+   Group 1: claims_specialist, fraud_detector
+   Group 2: customer_service
+
+🔄 Fallback Plans:
+   claims_specialist → customer_service
+   fraud_detector → customer_service
+   customer_service → customer_service
+
+💳 CREDIT OPTIMIZATION DEMO
+----------------------------
+📋 Task: Comprehensive risk analysis with claim processing and fraud detection
+🔧 Base Workflow: 4 steps, 25 credits
+
+💰 High Budget Scenario (Budget: 50 credits):
+   ✂️ Steps: 4 → 4 (-0)
+   💰 Cost: 25 → 25 (-0)
+   ⚡ Efficiency Gain: 0.0%
+   📊 Budget Utilization: 50.0%
+   🤖 Selected Agents: coordinator, claims_specialist, fraud_detector, risk_analyst
+
+💰 Medium Budget Scenario (Budget: 25 credits):
+   ✂️ Steps: 4 → 4 (-0)
+   💰 Cost: 25 → 25 (-0)
+   ⚡ Efficiency Gain: 0.0%
+   📊 Budget Utilization: 100.0%
+   🤖 Selected Agents: coordinator, claims_specialist, fraud_detector, risk_analyst
+
+💰 Low Budget Scenario (Budget: 10 credits):
+   ✂️ Steps: 4 → 2 (-2)
+   💰 Cost: 25 → 10 (-15)
+   ⚡ Efficiency Gain: 60.0%
+   📊 Budget Utilization: 100.0%
+   🤖 Selected Agents: coordinator, claims_specialist
+
+📊 REAL-TIME MONITORING DEMO
+------------------------------
+🔄 Active Workflows:
+   WF_001: Auto claim processing
+      Progress: 50.0% (2/4)
+      Credits Used: 8
+      Status: in_progress
+   WF_002: Risk assessment
+      Progress: 33.3% (1/3)
+      Credits Used: 4
+      Status: in_progress
+   WF_003: Fraud investigation
+      Progress: 100.0% (3/3)
+      Credits Used: 15
+      Status: completing
+
+📈 System Metrics:
+   Active Workflows: 3
+   Total Credits in Use: 27
+   Average Progress: 61.1%
+   System Load: Medium
+
+==================================================
+✅ Demo completed successfully!
+🎯 Key Highlights:
+   • Multi-agentic AI with 7 specialized agents
+   • ReAct framework for intelligent reasoning
+   • Hierarchical coordination for complex tasks
+   • Credit optimization for cost efficiency
+   • Real-time monitoring and analytics
+   • Clear workflow visualization
+
+🚀 Ready for production deployment!
+==================================================
